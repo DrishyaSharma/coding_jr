@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+            background-color: rgb(159, 156, 156);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>Fill Out this form to be the part of RAYSHI</header>
+    <main>
+        <form>
+            <hr>
+            <h1>Campus Ambassador Form</h1>
+            <h4>Enter your name</h4>
+            <input type="text" placeholder="NAME"><br>
+            <h4>Name of the university</h4>
+            <input type="text" placeholder="University name"><br>
+            <h4>Enter your phone number</h4>
+            <input type="number" placeholder="Enter your mobile number"><br>
+            <h4>Which course you are enrolled in?</h4>
+            <input type="text" placeholder="Enter your course"><br>
+            <h4>Which year are you currently in?</h4>
+            <label for="year1">
+                <input type="radio" value="1st" id="year1" name="year of study"> 1<sup>st </sup><br>
+            </label>
+            <label for="year2">
+                <input type="radio" value="2nd" id="year2" name="year of study"> 2<sup>nd </sup><br>
+            </label>
+            <label for="year3">
+                <input type="radio" value="3rd" id="year3" name="year of study"> 3<sup>rd </sup><br>
+            </label>
+            <label for="year4">
+                <input type="radio" value="4th" id="year4" name="year of study"> 4<sup>th </sup><br>
+            </label>
+            <h4>Select your age group.</h4>
+            <label for ="101">
+                <input type="radio" value="Below 18" name="class" id="101">Below 18<br>
+            </label>
+            <label for ="102">
+                <input type="radio" value="18-27" name="class" id="102">18-27<br>
+            </label>
+            <label for ="101">
+                <input type="radio" value="above 27" name="class" id="101">Above 27<br>
+            </label>
+            <h4>Which Societies are you a part of in your University?</h4>
+            <textarea name="Enter the Societies in which you were in and include the work that you did there in detail" placeholder="Enter the Societies in which you were in and include the work that you did there in detail" rows="10" columns="40"></textarea><br><br>
+            <h4>Select your city</h4>
+            <select name="city" id="city">
+                <option value="Delhi NCR">Delhi NCR</option>
+                <option value="Mumbai">Mumbai </option>
+                <option value="Banglore">Banglore</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Haryana">Haryana</option>
+            </select> 
+            <h4>FEEDBACK</h4>
+            <textarea name="Feedback" id =101 placeholder="Please give your valuable feedback here" rows="5" columns="5"></textarea><br><br>    
+            <input type="submit" value="submit">
+        </form>
+        <hr>
+    </main>
+    
+</body>
+</html>
