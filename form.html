@@ -4,69 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM</title>
-    <style>
-        body {
-            background-color: rgb(159, 156, 156);
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-    </style>
-
 </head>
 <body>
     <header>Fill Out this form to be the part of RAYSHI</header>
     <main>
-        <form>
+        <form action="form_response.html" method="GET">
             <hr>
             <h1>Campus Ambassador Form</h1>
             <h4>Enter your name</h4>
-            <input type="text" placeholder="NAME"><br>
+            <input type="text" placeholder="NAME" required><br>
             <h4>Name of the university</h4>
-            <input type="text" placeholder="University name"><br>
+            <input type="text" placeholder="University name" required><br>
             <h4>Enter your phone number</h4>
-            <input type="number" placeholder="Enter your mobile number"><br>
+            <input type="tel" placeholder="Enter your mobile number" name="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br>
             <h4>Which course you are enrolled in?</h4>
-            <input type="text" placeholder="Enter your course"><br>
+            <input type="text" placeholder="Enter your course" required><br>
             <h4>Which year are you currently in?</h4>
             <label for="year1">
-                <input type="radio" value="1st" id="year1" name="year of study"> 1<sup>st </sup><br>
+                <input type="radio" value="1st" id="year1" name="year_of_study" required> 1<sup>st </sup><br>
             </label>
             <label for="year2">
-                <input type="radio" value="2nd" id="year2" name="year of study"> 2<sup>nd </sup><br>
+                <input type="radio" value="2nd" id="year2" name="year_of_study" required> 2<sup>nd </sup><br>
             </label>
             <label for="year3">
-                <input type="radio" value="3rd" id="year3" name="year of study"> 3<sup>rd </sup><br>
+                <input type="radio" value="3rd" id="year3" name="year_of_study" required> 3<sup>rd </sup><br>
             </label>
             <label for="year4">
-                <input type="radio" value="4th" id="year4" name="year of study"> 4<sup>th </sup><br>
+                <input type="radio" value="4th" id="year4" name="year_of_study" required> 4<sup>th </sup><br>
             </label>
             <h4>Select your age group.</h4>
-            <label for ="101">
-                <input type="radio" value="Below 18" name="class" id="101">Below 18<br>
+            <label for="age1">
+                <input type="radio" value="Below 18" id="age1" name="age_group" required> Below 18<br>
             </label>
-            <label for ="102">
-                <input type="radio" value="18-27" name="class" id="102">18-27<br>
+            <label for="age2">
+                <input type="radio" value="18-27" id="age2" name="age_group" required> 18-27<br>
             </label>
-            <label for ="101">
-                <input type="radio" value="above 27" name="class" id="101">Above 27<br>
+            <label for="age3">
+                <input type="radio" value="Above 27" id="age3" name="age_group" required> Above 27<br>
             </label>
             <h4>Which Societies are you a part of in your University?</h4>
-            <textarea name="Enter the Societies in which you were in and include the work that you did there in detail" placeholder="Enter the Societies in which you were in and include the work that you did there in detail" rows="10" columns="40"></textarea><br><br>
+            <textarea name="societies" placeholder="Enter the Societies in which you were in and include the work that you did there in detail" rows="10" cols="40" required></textarea><br><br>
             <h4>Select your city</h4>
-            <select name="city" id="city">
+            <select name="city" id="city" required>
+                <option value="" disabled selected>Select your city</option>
                 <option value="Delhi NCR">Delhi NCR</option>
-                <option value="Mumbai">Mumbai </option>
+                <option value="Mumbai">Mumbai</option>
                 <option value="Banglore">Banglore</option>
                 <option value="Punjab">Punjab</option>
                 <option value="Haryana">Haryana</option>
             </select> 
             <h4>FEEDBACK</h4>
-            <textarea name="Feedback" id =101 placeholder="Please give your valuable feedback here" rows="5" columns="5"></textarea><br><br>    
-            <input type="submit" value="submit">
+            <textarea name="feedback" id="feedback" placeholder="Please give your valuable feedback here" rows="5" cols="5" required></textarea><br><br>    
+            <button type="submit">Submit</button>
         </form>
         <hr>
     </main>
-    
 </body>
 </html>
