@@ -3,26 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP</title>
+    <title>The Khadi Edit</title>
     <style>
         body {
-            background-color: rgb(159, 156, 156);
+            background-color: #f5f5f5;
             margin: 0;
             font-family: Arial, sans-serif;
+            color: #333;
         }
 
+        header {
+            text-align: center;
+            background-color: #444;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .product a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .product a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <header><h1><B>The Khadi Edit</B></h1></header>
-    <Main>
-        <a href="/coding_jr/Midnight.html"> <img src="https://rayshi.in/wp-content/uploads/2024/07/DSC00037-scaled.jpg" alt="MIDNIGHT PRINTED KHADI SHIRT" height="600"></a><br>
-            <a href="/coding_jr/Midnight.html" target="_main">MIDNIGHT PRINTED KHADI SHIRT</a>
+    <header>
+        <h1><strong>The Khadi Edit</strong></h1>
+    </header>
+    <main>
+        <div class="product">
+            <a href="/coding_jr/Midnight.html">
+                <img src="https://rayshi.in/wp-content/uploads/2024/07/DSC00037-scaled.jpg" alt="MIDNIGHT PRINTED KHADI SHIRT">
+                <h2>MIDNIGHT PRINTED KHADI SHIRT</h2>
+            </a>
             <p>₹ 1650</p>
-                <hr>  
-                <a href="/coding_jr/Bright_Horizon.html"> <img src="https://rayshi.in/wp-content/uploads/2024/07/DSC09937-1365x2048.jpg" alt=" BRIGHT HORIZON PRINTED KHADI SHIRT" height="600"></a><br>
-                    <a href="/coding_jr/Bright_Horizon.html" target="_main"> BRIGHT HORIZON PRINTED KHADI SHIRT</a>   
-                    <p>₹ 1650</p>   
-    </Main>
+        </div>
+        <hr>
+        <div class="product">
+            <a href="/coding_jr/Bright_Horizon.html">
+                <img src="https://rayshi.in/wp-content/uploads/2024/07/DSC09937-1365x2048.jpg" alt="BRIGHT HORIZON PRINTED KHADI SHIRT">
+                <h2>BRIGHT HORIZON PRINTED KHADI SHIRT</h2>
+            </a>
+            <p>₹ 1650</p>
+        </div>
+    </main>
 </body>
 </html>

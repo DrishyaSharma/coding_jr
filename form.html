@@ -3,61 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
+    <title>Campus Ambassador Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        main {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            color: #555;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <header>Fill Out this form to be the part of RAYSHI</header>
     <main>
+        <header>Fill Out This Form to Be a Part of RAYSHI</header>
         <form action="form_response.html" method="GET">
-            <hr>
             <h1>Campus Ambassador Form</h1>
+            <hr>
             <h4>Enter your name</h4>
-            <input type="text" placeholder="NAME" required><br>
+            <input type="text" placeholder="NAME" required>
+
             <h4>Name of the university</h4>
-            <input type="text" placeholder="University name" required><br>
+            <input type="text" placeholder="University name" required>
+
             <h4>Enter your phone number</h4>
-            <input type="tel" placeholder="Enter your mobile number" name="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br>
+            <input type="tel" placeholder="Enter your mobile number" name="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+
             <h4>Which course you are enrolled in?</h4>
-            <input type="text" placeholder="Enter your course" required><br>
+            <input type="text" placeholder="Enter your course" required>
+
             <h4>Which year are you currently in?</h4>
-            <label for="year1">
-                <input type="radio" value="1st" id="year1" name="year_of_study" required> 1<sup>st </sup><br>
+            <label>
+                <input type="radio" value="1st" name="year_of_study" required> 1<sup>st</sup>
             </label>
-            <label for="year2">
-                <input type="radio" value="2nd" id="year2" name="year_of_study" required> 2<sup>nd </sup><br>
+            <label>
+                <input type="radio" value="2nd" name="year_of_study" required> 2<sup>nd</sup>
             </label>
-            <label for="year3">
-                <input type="radio" value="3rd" id="year3" name="year_of_study" required> 3<sup>rd </sup><br>
+            <label>
+                <input type="radio" value="3rd" name="year_of_study" required> 3<sup>rd</sup>
             </label>
-            <label for="year4">
-                <input type="radio" value="4th" id="year4" name="year_of_study" required> 4<sup>th </sup><br>
+            <label>
+                <input type="radio" value="4th" name="year_of_study" required> 4<sup>th</sup>
             </label>
-            <h4>Select your age group.</h4>
-            <label for="age1">
-                <input type="radio" value="Below 18" id="age1" name="age_group" required> Below 18<br>
+
+            <h4>Select your age group</h4>
+            <label>
+                <input type="radio" value="Below 18" name="age_group" required> Below 18
             </label>
-            <label for="age2">
-                <input type="radio" value="18-27" id="age2" name="age_group" required> 18-27<br>
+            <label>
+                <input type="radio" value="18-27" name="age_group" required> 18-27
             </label>
-            <label for="age3">
-                <input type="radio" value="Above 27" id="age3" name="age_group" required> Above 27<br>
+            <label>
+                <input type="radio" value="Above 27" name="age_group" required> Above 27
             </label>
+
             <h4>Which Societies are you a part of in your University?</h4>
-            <textarea name="societies" placeholder="Enter the Societies in which you were in and include the work that you did there in detail" rows="10" cols="40" required></textarea><br><br>
+            <textarea name="societies" placeholder="Enter the Societies you are part of, including your role and contributions" rows="6" required></textarea>
+
             <h4>Select your city</h4>
-            <select name="city" id="city" required>
+            <select name="city" required>
                 <option value="" disabled selected>Select your city</option>
                 <option value="Delhi NCR">Delhi NCR</option>
                 <option value="Mumbai">Mumbai</option>
-                <option value="Banglore">Banglore</option>
+                <option value="Bangalore">Bangalore</option>
                 <option value="Punjab">Punjab</option>
                 <option value="Haryana">Haryana</option>
-            </select> 
+            </select>
+
             <h4>FEEDBACK</h4>
-            <textarea name="feedback" id="feedback" placeholder="Please give your valuable feedback here" rows="5" cols="5" required></textarea><br><br>    
+            <textarea name="feedback" placeholder="Please give your valuable feedback here" rows="5" required></textarea>
+            <hr>
             <button type="submit">Submit</button>
         </form>
-        <hr>
     </main>
 </body>
 </html>

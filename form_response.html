@@ -3,13 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You <form action=""></form></title>
+    <title>Thank You</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #5a67d8;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: #5a67d8;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #434190;
+        }
+    </style>
 </head>
 <body>
-    <p><b>The form has been submitted.</b></p>
-    <a href="index.html">
-        <button>Go back to home Page</button>
-    </a>
-
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p><b>Your form has been submitted successfully.</b></p>
+        <a href="index.html">
+            <button>Go back to Home Page</button>
+        </a>
+    </div>
 </body>
 </html>

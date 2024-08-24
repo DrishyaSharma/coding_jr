@@ -1,34 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
         body {
-            background-color: rgb(159, 156, 156);
+            background-color: #f4f4f4;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
         }
 
-    </style>
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #e67e22;
+        }
 
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section {
+            flex: 1;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section p {
+            margin-bottom: 20px;
+        }
+
+        article {
+            flex: 2;
+            margin-bottom: 40px;
+        }
+
+        article img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        aside {
+            flex: 1;
+            margin-bottom: 40px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        aside img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        aside img:hover {
+            transform: scale(1.05);
+        }
+
+        aside small {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #e67e22;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 4px solid #e67e22;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <header><h1><b>About Us</b></h1></header>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
     <main>
-        <section>Welcome to Rayshi, where fashion meets individuality, and every piece tells a story. At Rayshi, we believe that clothing is more than just fabric stitched together; it's a reflection of who you are, your personality, and your journey. Our story begins with a passion for empowering individuals to express themselves through fashion, to embrace their uniqueness, and to feel confident in every outfit they wear.</section>
+        <section>
+            <p>Welcome to Rayshi, where fashion meets individuality, and every piece tells a story. At Rayshi, we believe that clothing is more than just fabric stitched together; it's a reflection of who you are, your personality, and your journey. Our story begins with a passion for empowering individuals to express themselves through fashion, to embrace their uniqueness, and to feel confident in every outfit they wear.</p>
+        </section>
+
         <article>
-            Rayshi was born out of a desire to create something truly unique in the world of fashion. Our founders, a team of innovative designers and fashion enthusiasts, came together with a shared vision: to redefine the way people think about clothing. We believe that fashion should be inclusive, diverse, and above all, personal. That’s why we pour our hearts into every design, ensuring that each piece tells a distinct story.<br><br><br><br>
-            <img src="https://rayshi.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-04-at-1.09.64-AM-scaled.jpeg" height="400"><br><br><br><br>
-            At Rayshi, we prioritize quality above all else. From the initial concept to the final stitch, every garment is crafted with care and attention to detail. We source the finest materials and work with skilled artisans to bring our designs to life. Each piece undergoes rigorous testing to ensure that it meets our standards of excellence. When you wear Rayshi, you’re not just wearing a piece of clothing - you're wearing a work of art.<br><br><br><br><br><br><br><br><br><br>
+            <p>Rayshi was born out of a desire to create something truly unique in the world of fashion. Our founders, a team of innovative designers and fashion enthusiasts, came together with a shared vision: to redefine the way people think about clothing. We believe that fashion should be inclusive, diverse, and above all, personal. That’s why we pour our hearts into every design, ensuring that each piece tells a distinct story.</p>
+            <img src="https://rayshi.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-04-at-1.09.64-AM-scaled.jpeg" alt="Rayshi Design">
+            <p>At Rayshi, we prioritize quality above all else. From the initial concept to the final stitch, every garment is crafted with care and attention to detail. We source the finest materials and work with skilled artisans to bring our designs to life. Each piece undergoes rigorous testing to ensure that it meets our standards of excellence. When you wear Rayshi, you’re not just wearing a piece of clothing - you're wearing a work of art.</p>
         </article>
+
         <aside>
-            <a href="https://www.nike.com/in/t/air-humara-shoes-gKlrMG/FB9982-100"><img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2a54f6e6-de57-454b-be2b-a4eeee62194e/W+NIKE+AIR+HUMARA.png" alt="Nike Shoes" height="100"></a><br>
+            <a href="https://www.nike.com/in/t/air-humara-shoes-gKlrMG/FB9982-100"><img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2a54f6e6-de57-454b-be2b-a4eeee62194e/W+NIKE+AIR+HUMARA.png" alt="Nike Shoes"></a>
             <small>SHOP NOW</small>
         </aside>
     </main>
-    <footer><p>&copy; 2024 RAYSHI. All rights reserved.</p></footer>
-    
+
+    <footer>
+        <p>&copy; 2024 RAYSHI. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

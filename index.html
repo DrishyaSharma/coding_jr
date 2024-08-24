@@ -6,26 +6,127 @@
     <title>Rayshi - Home Page</title>
     <style>
         body {
-            background-color: rgb(159, 156, 156);
+            background-color: #f4f4f4;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            color: #333;
         }
 
+        header {
+            background-color: #232b26;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+        }
+
+        section img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: #ff4500;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #ff6347;
+        }
+
+        textarea {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 70%;
+            max-width: 100%;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1><u>Rayshi</u></h1>
+        <h1>Rayshi</h1>
     </header>
     
     <main>
         <section>
-            <h2>Since 1997</h2>
-            <p><i>Where fashion meets individuality</i></p>
+            <p>Where fashion meets individuality</p>
         </section>
         
         <section>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE9tstbE2cDg9g_a3MSzVSdRzXvVVBEZPBag&s" width="500" alt="RAYSHI Logo">
+            <img src="/coding_jr/rayshi home.png" width="1200" alt="RAYSHI Logo">
             <br><br>
             <a href="shop.html">
                 <button>Shop Now</button>
@@ -49,7 +150,6 @@
             <a href="thankyou.html">
                 <button>Submit</button>
             </a>
-<!--            <button type="submit">Submit</button>-->
         </section>
     </main>
     

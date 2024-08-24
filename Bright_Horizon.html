@@ -6,41 +6,105 @@
     <title>Bright HORIZON</title>
     <style>
         body {
-            background-color: rgb(159, 156, 156);
+            background-color: #f2f2f2;
             margin: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-    </style>
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
 
+        .container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #e60000;
+            margin: 10px 0;
+        }
+
+        .quantity-label {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        #quantity {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <img src="https://rayshi.in/wp-content/uploads/2024/07/DSC09937-1365x2048.jpg" alt="BRIGHT HORIZON PRINTED KHADI SHIRT" height="600"><br> <B>BRIGHT HORIZON PRINTED KHADI SHIRT</B><br> ₹ 1650<br><br>
-    <H4>quantity</H4>
-    <select name="quantity" id="quantity">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="2">3</option>
-        <option value="2">4</option>
-        <option value="2">5</option>
-        <option value="2">6</option>
-        <option value="2">7</option>
-        <option value="2">8</option>
-        <option value="2">9</option>
-        <option value="2">10</option>
-        <option value="2">11</option>
-        <option value="2">12</option>
-        <option value="2">13</option>
-        <option value="2">14</option>
-        <option value="2">15</option>
-        <option value="2">16</option>
-        <option value="2">17</option>
-        <option value="2">18</option>
-        <option value="2">19</option>
-        <option value="2">20</option>
-    </select>
-    <a href="cart.html">
-        <button>Add to Cart</button>
-    </a>
+    <div class="container">
+        <img src="https://rayshi.in/wp-content/uploads/2024/07/DSC09937-1365x2048.jpg" alt="BRIGHT HORIZON PRINTED KHADI SHIRT">
+        <div class="product-title">BRIGHT HORIZON PRINTED KHADI SHIRT</div>
+        <div class="price">₹ 1650</div>
+        <div class="quantity-label">Quantity</div>
+        <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+        <a href="cart.html">
+            <button>Add to Cart</button>
+        </a>
+    </div>
 </body>
 </html>

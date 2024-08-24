@@ -1,29 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Blog</title>
     <style>
         body {
-            background-color: rgb(159, 156, 156);
+            background-color: #f4f4f4;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            color: #333;
         }
 
+        h1 {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            border-bottom: 4px solid #e67e22;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .blog-post {
+            flex: 1;
+            min-width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-post a {
+            display: block;
+            padding: 20px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-post a:hover {
+            color: #e67e22;
+        }
     </style>
-
 </head>
-<body>
-    <h1><B><U>BLOGS</U></B></h1>
-    <div>
-        <a href="/coding_jr/blog1.html"><img src="https://www.snitch.co.in/cdn/shop/articles/graphic_tee_vs_plain_tee.jpg?v=1720607382&width=900" height="400"></a><br>
-        <a href="/coding_jr/blog1.html" target="_main"> Graphic Tees vs Plain Tees: How to Style Each for Different Occasions</a>   
 
-    </div><br><br>
-    <div>
-        <a href="/coding_jr/blog2.html"><img src="https://www.snitch.co.in/cdn/shop/articles/jeans.jpg?v=1720593332&width=900" height="400"> </a><br>
-        <a href="/coding_jr/blog2.html" target="_main"> The Best Jean Cuts for Different Body Types: Finding Your Perfect Fit</a>   
+<body>
+    <h1><b><u>Blogs</u></b></h1>
+
+    <div class="blog-container">
+        <div class="blog-post">
+            <a href="/coding_jr/blog1.html">
+                <img src="https://www.snitch.co.in/cdn/shop/articles/graphic_tee_vs_plain_tee.jpg?v=1720607382&width=900" alt="Graphic Tees vs Plain Tees">
+                <p>Graphic Tees vs Plain Tees: How to Style Each for Different Occasions</p>
+            </a>
+        </div>
+
+        <div class="blog-post">
+            <a href="/coding_jr/blog2.html">
+                <img src="https://www.snitch.co.in/cdn/shop/articles/jeans.jpg?v=1720593332&width=900" alt="The Best Jean Cuts for Different Body Types">
+                <p>The Best Jean Cuts for Different Body Types: Finding Your Perfect Fit</p>
+            </a>
+        </div>
     </div>
 </body>
+
 </html>
