@@ -8,21 +8,27 @@
         body {
             background-color: #f0f0f0;
             margin: 0;
-            font-family: 'Arial', sans-serif;
+
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
             color: #333;
             line-height: 1.6;
         }
 
-        header {
+
+        header, footer {
             background-color: #444;
             color: #fff;
-            padding: 20px;
+
             text-align: center;
+            padding: 20px 10px;
         }
 
-        h1 {
-            font-size: 2em;
+
+
+        header h1, article h1, h1 {
             margin: 0.5em 0;
+            font-size: 2em;
         }
 
         main {
@@ -34,47 +40,106 @@
             border-radius: 8px;
         }
 
-        section {
+
+        section, article, button {
             font-size: 1.1em;
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        section {
             margin-bottom: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid #ddd;
         }
 
-        article {
-            font-size: 1.1em;
-        }
 
-        article h1 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            article h1 {
+
             font-size: 1.8em;
             margin-top: 1.5em;
             color: #444;
             border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
-        }
-
+            }
         ol, ul {
             margin-left: 20px;
         }
-
-        ol li, ul li {
-            margin-bottom: 10px;
-        }
-
-        p {
+        ol li, ul li, p {
             margin-bottom: 20px;
         }
-
         a {
             color: #3498db;
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
         button {
+            display: inline-block;
             background-color: #3498db;
             color: #fff;
             border: none;
@@ -82,32 +147,20 @@
             font-size: 1em;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s;
         }
-
         button:hover {
             background-color: #2980b9;
         }
-
         footer {
-            background-color: #444;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
             font-size: 0.9em;
+            margin-top: 20px;
         }
-
         @media (max-width: 768px) {
             main {
                 padding: 10px;
             }
-
-            h1 {
-                font-size: 1.5em;
-            }
-
-            article h1 {
+            h1, article h1 {
                 font-size: 1.5em;
             }
         }
@@ -160,3 +213,4 @@
     </footer>
 </body>
 </html>
+x

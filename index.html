@@ -3,102 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayshi - Home Page</title>
+    <title>Rayshi Chatbot</title>
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: red;
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Times New Roman', serif;
             color: #333;
+            padding: 20px;
         }
-
+        .chat-window {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .message {
+            margin: 10px 0;
+        }
         header {
             background-color: #232b26;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-
         header h1 {
             font-size: 3em;
             margin: 0;
             text-transform: uppercase;
         }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        section {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        section p {
-            font-size: 1.2em;
-            color: #666;
-            font-style: italic;
-        }
-
-        section img {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        button {
-            background-color: #ff4500;
-            color: #fff;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #ff6347;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        ul li a {
-            color: #ff4500;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-
-        ul li a:hover {
-            color: #ff6347;
-        }
-
-        textarea {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            width: 70%;
-            max-width: 100%;
-            font-size: 1em;
-            margin-top: 10px;
-        }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -108,53 +42,48 @@
             width: 100%;
             bottom: 0;
         }
-
         footer p {
             margin: 0;
             font-size: 1em;
+        }
+        button {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff6347;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Rayshi</h1>
+        <h1>Rayshi Chatbot</h1>
     </header>
-    
-    <main>
-        <section>
-            <p>Where fashion meets individuality</p>
-        </section>
-        
-        <section>
-            <img src="/coding_jr/rayshi home.png" width="1200" alt="RAYSHI Logo">
-            <br><br>
-            <a href="shop.html">
-                <button>Shop Now</button>
-            </a>
-        </section>
-        
-        <section>
-            <h3>Important Links</h3>
-            <ul>
-                <li><a href="/coding_jr/about.html">About the Company</a></li>
-                <li><a href="/coding_jr/blog.html">Blogs</a></li>
-                <li><a href="/coding_jr/contact.html">Contact Us</a></li>
-                <li><a href="/coding_jr/form.html">Campus Ambassador Form</a></li>
-            </ul>
-        </section>
-        
-        <section>
-            <h3>Feedback</h3>
-            <textarea name="Feedback" id="feedback" placeholder="Please give your valuable feedback here" rows="5" cols="70"></textarea>
-            <br><br>
-            <a href="thankyou.html">
-                <button>Submit</button>
-            </a>
-        </section>
-    </main>
-    
+    <div class="chat-window">
+        <div id="chat"></div>
+        <input id="userMessage" type="text" placeholder="Type your message here..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
     <footer>
         <p>&copy; 2024 RAYSHI. All rights reserved.</p>
     </footer>
+    <script>
+        function sendMessage() {
+            // Function logic yet to be implemented
+        }
+    </script>
 </body>
 </html>
